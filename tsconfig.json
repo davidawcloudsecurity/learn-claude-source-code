@@ -14,16 +14,19 @@
     "sourceMap": true,
     "jsx": "react-jsx",
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": ".",
     "baseUrl": ".",
+    "ignoreDeprecations": "5.0",
     "paths": {
       "bun:bundle": ["stubs/bun-bundle.ts"],
+      "bun:ffi": ["stubs/bun-bundle.ts"],
       "src/*": ["src/*"]
     },
-    "types": ["node"],
+    "typeRoots": ["node_modules/@types"],
     "lib": ["ES2022", "DOM"],
     "allowImportingTsExtensions": false,
-    "noEmit": false
+    "noEmit": false,
+    "ignoreDeprecations": "5.0"
   },
   "include": [
     "src/**/*",
